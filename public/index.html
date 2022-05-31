@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Studbud</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="scss/main.scss">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+         <!-- Studbud Logo  -->
+          <img class="logo" src="images/logo.png" alt="logo">
+          <!-- Navigation toggle between study room (index.html) and study plan (study.html) -->
+          <nav>
+              <ul class="navbar">
+                  <li><a href="index.html">Study Room</a></li>
+                  <li><a href="study.html">Study Plan</a></li>
+              </ul>
+          </nav>
+      </header>
+      <!-- background image for pomodoro -->
+      <div class="pomodoro">
+      <img class="pomodorobg" src="images/window.PNG" alt="window">
+      <!-- Pomodoro Timer developed with the help of tutorial: https://freshman.tech/pomodoro-timer/-->
+      <main class="app">
+        <div class="timer">
+          <div class="button-group mode-buttons" id="js-mode-buttons">
+            <button data-mode="pomodoro" class="button active mode-button" id="js-pomodoro">Pomodoro</button>
+            <button data-mode="break" class="button mode-button" id="js-break">Break</button>
+          </div>
+          <!-- Set initial time for clock -->
+          <div class="clock" id="js-clock">
+            <span id="js-minutes">25</span>
+            <span class="separator">:</span>
+            <span id="js-seconds">00</span>
+          </div>
+          <button class="main-button" data-action="start" id="js-btn">Start</button>
+        </div>
+      </main>
+      </div>
+     
+        <script src="script.js" async defer></script>
+        <!-- Javascript for pomodoro timer -->
+        <script src="js/pomodoro.js"></script>
+    </body>
+</html>

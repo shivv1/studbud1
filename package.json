@@ -1,0 +1,30 @@
+{
+  "name": "studbud",
+  "version": "1.0.0",
+  "description": "StudBud WebApp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "parcel build ./public/index.html",
+    "dev": "parcel serve ./public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivv1/studbud.git"
+  },
+  "author": "Shivani Chand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivv1/studbud/issues"
+  },
+  "homepage": "https://github.com/shivv1/studbud#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "sass": "^1.50.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1",
+    "parcel": "^2.4.1"
+  }
+}

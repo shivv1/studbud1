@@ -1,0 +1,138 @@
+img {
+    // adjust to page resize
+    max-width: 100%;
+    height: auto;
+}
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  //colour change depending on mode
+  :root {
+    --pomodoro: #3e3250;
+    --break: #6f6082;
+  }
+  
+  body {
+    background-color: var(--pomodoro);
+    transition: background-color 1s ease;
+    color: white;
+    font-weight: 800;
+    user-select: none;
+  }
+  
+  .timer {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+  }
+  
+  .clock {
+    margin-top: 20px;
+    font-size: 11rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    font-family: arial, sans-serif;
+  }
+  
+  .mode-button {
+    font-size: 16px;
+    height: 28px;
+    cursor: pointer;
+    font-weight: 300;
+    color: #fff;
+    border: 1px solid transparent;
+    margin: 0px;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
+  }
+  
+  .mode-button.active {
+    border-color: #fff;
+  }
+  
+  .main-button {
+    cursor: pointer;
+    font-size: 16px;
+    height: 50px;
+    color: #5F536E;
+    font-weight: bold;
+    width: 100px;
+    background-color: white;
+    border-width: initial;
+    border-style: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    text-transform: uppercase;
+  }
+  
+  button:focus, button:active {
+    outline: none;
+  }
+  
+  .main-button.active {
+    transform: translateY(6px);
+    box-shadow: none;
+    outline: none;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .clock {
+      font-size: 75px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+
+    }
+
+    .timer{
+        position: absolute;
+        top: 300px;
+    }
+
+    .mode-button{
+        font-size: 14px;
+        height: 22px;
+    }
+
+    .main-button{
+        font-size: 14px;
+        height: 40px;
+        width: 75px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .clock {
+      font-size: 60px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+    }
+
+    .timer{
+        position: absolute;
+        top: 240px;
+    }
+
+    .mode-button{
+        font-size: 12px;
+        height: 20px;
+    }
+
+    .main-button{
+        font-size: 12px;
+        height: 30px;
+        width: 60px;
+    }
+  }
