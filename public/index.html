@@ -47,26 +47,40 @@
         </div>
       </main>
       </div>
-      <!-- Grid Container -->
+      <!-- Grid Layout -->
       <div class="grid">
-        <div class="col">
+        <!-- grid box for music player -->
+        <div class="col col1">
           <h3>Col 1</h3>
         </div>
-        <div class="col">
-          <h3>Col 2</h3>
+        <!-- box for stopwatch -->
+        <div class="col col2">
+          <div class="stopwatch">
+            <div class="counter">
+              <h1>
+                <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
+              </h1>
+              <button id="startstop">Start</button>
+              <button id="reset">Reset</button>
+            </div>
+          </div>
         </div>
-        <div class="col">
+        <!-- box for dictionary -->
+        <div class="col col3">
           <h3>Col 3</h3>
         </div>
-        <div class="col">
+        <!-- box for kanban -->
+        <div class="col col4">
           <h3>Col 4</h3>
         </div>
       </div>
-     
         <script src="script.js" async defer></script>
         <!-- Javascript for pomodoro timer -->
         <script src="js/pomodoro.js"></script>
         <!-- Javacript for music player -->
         <script src="js/music.js"></script>
+        <!-- Javascript for stopwatch -->
+        <script src="js/stopwatch.js"></script>
+
     </body>
 </html>
