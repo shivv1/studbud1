@@ -31,6 +31,7 @@
       <!-- Pomodoro Timer developed with the help of tutorial: https://freshman.tech/pomodoro-timer/-->
       <main class="app">
         <div class="timer">
+          <!-- Toggle between two buttons to activate pomodoro mode or break mode -->
           <div class="button-group mode-buttons" id="js-mode-buttons">
             <button data-mode="pomodoro" class="button active mode-button" id="js-pomodoro">Pomodoro</button>
             <button data-mode="break" class="button mode-button" id="js-break">Break</button>
@@ -41,13 +42,31 @@
             <span class="separator">:</span>
             <span id="js-seconds">00</span>
           </div>
+          <!-- Start button for timer -->
           <button class="main-button" data-action="start" id="js-btn">Start</button>
         </div>
       </main>
+      </div>
+      <!-- Grid Container -->
+      <div class="grid">
+        <div class="col">
+          <h3>Col 1</h3>
+        </div>
+        <div class="col">
+          <h3>Col 2</h3>
+        </div>
+        <div class="col">
+          <h3>Col 3</h3>
+        </div>
+        <div class="col">
+          <h3>Col 4</h3>
+        </div>
       </div>
      
         <script src="script.js" async defer></script>
         <!-- Javascript for pomodoro timer -->
         <script src="js/pomodoro.js"></script>
+        <!-- Javacript for music player -->
+        <script src="js/music.js"></script>
     </body>
 </html>
