@@ -28,7 +28,7 @@
       <!-- background image for pomodoro -->
       <div class="pomodoro">
       <img class="pomodorobg" src="images/window.PNG" alt="window">
-      <!-- Pomodoro Timer developed with the help of tutorial: https://freshman.tech/pomodoro-timer/-->
+      <!-- Pomodoro Timer developed with the help of tutorial by Freshman Tech: https://freshman.tech/pomodoro-timer/-->
       <main class="app">
         <div class="timer">
           <!-- Toggle between two buttons to activate pomodoro mode or break mode -->
@@ -51,15 +51,28 @@
       <div class="grid">
         <!-- grid box for music player -->
         <div class="col col1">
-          <h3>Col 1</h3>
+          <div class="controller">
+            <div id="circle-bg" class="circle">
+                <div id="circle-sm" class="circle2"><img id="cover" src="/public/images/moon.png" class="fluid-img"></div>
+            </div>
+            <div class="songs">
+                <h3 id="song-name">Moon</h3>
+                <div class="controls">
+                    <audio id="audio" src="music/moon.mp3"></audio>
+                    <img id="backward" class="media-btn" src="/public/images/back.png">
+                    <img id="play-stop" class="media-btn">
+                    <img id="forward" class="media-btn" src="/public/images/next.png">
+                </div>
+            </div>
+        </div>
         </div>
         <!-- box for stopwatch -->
         <div class="col col2">
           <div class="stopwatch">
             <div class="counter">
-              <h1>
+              <h2>
                 <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
-              </h1>
+              </h2>
               <button id="startstop">Start</button>
               <button id="reset">Reset</button>
             </div>
