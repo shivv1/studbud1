@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
       <header>
@@ -51,22 +52,20 @@
       <div class="grid">
         <!-- grid box for music player -->
         <div class="col col1">
-          <div class="controller">
-            <div id="circle-bg" class="circle">
-                <div id="circle-sm" class="circle2"><img id="cover" src="/public/images/moon.png" class="fluid-img"></div>
+          <div class="music-box">
+            <div id="album" class="music-circle">
+                <div id="album" class="music-circle"><img id="cover" src="/public/images/moon.png"></div>
             </div>
-            <div class="songs">
-                <h3 id="song-name">Moon</h3>
-                <div class="controls">
-                    <audio id="audio" src="music/moon.mp3"></audio>
-                    <img id="backward" class="media-btn" src="/public/images/back.png">
-                    <img id="play-stop" class="media-btn">
-                    <img id="forward" class="media-btn" src="/public/images/next.png">
-                </div>
-            </div>
-        </div>
-        </div>
+          <!-- <div class="music-container">
+            <div class="img-container">
+              <img id="cover" src = "images/moon.png" alt="moon cover art">
+            </div> -->
+            <!-- Sample Music -->
+            <h3>Lofi Mix</h3>
+            <audio src="music/moon.mp3" controls></audio>
+          </div>
         <!-- box for stopwatch -->
+        </div>
         <div class="col col2">
           <div class="stopwatch">
             <div class="counter">
