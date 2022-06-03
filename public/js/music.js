@@ -102,4 +102,4 @@
 // playPause.addEventListener("click", playingSong);
 // back.addEventListener("click", backPlay);
 // next.addEventListener("click", nextPlay);
-
+ 

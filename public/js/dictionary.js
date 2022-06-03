@@ -1,4 +1,4 @@
-// // Javascript developed with the help of tutorial by Coding Artist: https://www.youtube.com/watch?v=PUkgK7TI0x0&t=809s
+// // developed with the help of tutorial by Coding Artist: https://www.youtube.com/watch?v=PUkgK7TI0x0&t=809s
 // // & tutorial by Jarrett Retz https://rapidapi.com/blog/build-a-dictionary-app-with-the-wordsapi/
 // // & from API website: https://dictionaryapi.dev/
 
