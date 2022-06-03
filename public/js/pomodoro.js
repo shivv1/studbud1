@@ -4,13 +4,10 @@
 const timer = {
   pomodoro: 25,
   break: 5,
-  breakInterval: 4
 };
 
-let interval;
-
 //start timer when clicked
-const mainButton = document.getElementById('js-btn');
+const mainButton = document.getElementById('pomodoro-btn');
 mainButton.addEventListener('click', () => {
 const { action } = mainButton.dataset;
 if (action === 'start') {
@@ -21,7 +18,7 @@ if (action === 'start') {
 });
 
 // Makes mode buttons functional
-const modeButtons = document.querySelector('#js-mode-buttons');
+const modeButtons = document.querySelector('#pomodoro-mode');
 modeButtons.addEventListener('click', handleMode);
 
 // Which mode is clicked
@@ -29,7 +26,6 @@ function handleMode(event){
   const { mode } = event.target.dataset;
 //if no mode selected return nothing
   if(!mode) return;
-
   switchMode(mode);
   stopTimer();
 }
@@ -102,8 +98,8 @@ function updateClock(){
   const minutes = `${remainingTime.minutes}`.padStart(2, '0');
   const seconds = `${remainingTime.seconds}`.padStart(2, '0');
 
-  const min = document.getElementById('js-minutes');
-  const sec = document.getElementById('js-seconds');
+  const min = document.getElementById('minutes');
+  const sec = document.getElementById('seconds');
 
   min.textContent = minutes;
   sec.textContent = seconds;

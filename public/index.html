@@ -33,18 +33,18 @@
       <main class="app">
         <div class="timer">
           <!-- Toggle between two buttons to activate pomodoro mode or break mode -->
-          <div class="button-group mode-buttons" id="js-mode-buttons">
-            <button data-mode="pomodoro" class="button active mode-button" id="js-pomodoro">Pomodoro</button>
-            <button data-mode="break" class="button mode-button" id="js-break">Break</button>
+          <div class="button-group mode-buttons" id="pomodoro-mode">
+            <button data-mode="pomodoro" class="button active mode-button" id="pomodoro">Pomodoro</button>
+            <button data-mode="break" class="button mode-button" id="break">Break</button>
           </div>
           <!-- Set initial time for clock -->
           <div class="clock" id="js-clock">
-            <span id="js-minutes">25</span>
+            <span id="minutes">25</span>
             <span class="separator">:</span>
-            <span id="js-seconds">00</span>
+            <span id="seconds">00</span>
           </div>
           <!-- Start button for timer -->
-          <button class="main-button" data-action="start" id="js-btn">Start</button>
+          <button class="main-button" data-action="start" id="pomodoro-btn">Start</button>
         </div>
       </main>
       </div>
@@ -84,6 +84,7 @@
               <input onkeypress="handle(event)" type="text" class="search-field" placeholder="Dictionary Search"/>
             </div>
             <div class="result">
+              <!-- placeholder texts -->
               <h4 id="word" class="word">Hello</h4>
               <p class="phonetics">/həˈləʊ/</p>
               <p class="word-definition">A greeting</p>
@@ -101,7 +102,49 @@
         </div>
         <!-- box for kanban -->
         <div class="col col4">
-          <h3>Col 4</h3>
+          <h3>Task List</h3>
+          <div class="kanban-container">
+            <div class="newtasksection">
+              <!-- New task form -->
+              <h6>New Task</h6>
+              <form id="taskform">
+                <label for="task">Task:</label>
+                <input type="text" name="task" id="taskInput" required>
+                <!-- Date input -->
+                <label for="dueDate">Due Date: </label>
+                <input type="date" name="dueDate" id="dueDateInput">
+                <!-- Time input -->
+                <label for="completionTime">Completion Time: </label>
+                <input type="time" name="completionTime" id="completionTimeInput">
+                <label for="estimatedTime">Estimated completion time (in mins):</label>
+                <input type="number" name="estimatedTime" id="estimatedTimeInput">
+                <!-- Priority -->
+                <label for="priority">Task Priority:</label>
+                <select name="prority" id="priorityInput">
+                    <option value="">Select one</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button class="button1" type="submit">Submit</button>
+            </form>
+            </div>
+            <div class="section" id="tasklist">
+              <h5>To Do</h5>
+              <p class="placeholder" id="emptyList">Add your first task</p>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+            </div>
+            <div class="section">
+              <h5>In Progress</h5>
+            </div>
+            <div class="section">
+              <h5>Completed</h5>
+            </div>
+          </div>
         </div>
       </div>
         <script src="script.js" async defer></script>
@@ -113,6 +156,7 @@
         <script src="js/stopwatch.js"></script>
         <!-- Javascript for dictionary -->
         <script src="js/dictionary.js"></script>
-
+        <!-- Javascript for Kanban/todo -->
+        <script src="js/kanban.js"></script>
     </body>
 </html>

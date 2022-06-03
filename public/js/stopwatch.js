@@ -1,9 +1,11 @@
+//starting times
 var startstop   = document.getElementById("startstop"),
     seconds = 0,
     minutes = 0,
     hours = 0,
     counter;
 
+//function for accurate timer
 function buildCounter() {
   seconds++;
   if (seconds >= 60) {
@@ -14,7 +16,7 @@ function buildCounter() {
       hours++;
     }
   }
-  
+  // if number is less than 10 display 0 & number
   second.textContent = (seconds < 10 ? "0" + seconds.toString(): seconds);
   minute.textContent = (minutes < 10 ? "0" + minutes.toString(): minutes);
   hour.textContent = (hours < 10 ? "0" + hours.toString(): hours);
@@ -33,6 +35,7 @@ function stopCounter() {
   return false;
 }
 
+//when start button clicked display stop and vice versa
 startstop.onclick = function() {
   if (this.textContent === "Start") {
     this.textContent = "Stop";
@@ -43,6 +46,7 @@ startstop.onclick = function() {
   }
 };
 
+//function to reset back to 0
 reset.onclick = function() {
   stopCounter();
   seconds = 0;

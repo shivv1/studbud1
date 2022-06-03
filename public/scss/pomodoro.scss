@@ -64,12 +64,13 @@ img {
     cursor: pointer;
     font-size: 16px;
     height: 50px;
-    color: #5F536E;
+    color: white;
     font-weight: bold;
     width: 100px;
-    background-color: white;
+    background-color: transparent;
     border-width: initial;
-    border-style: none;
+    border-style: solid;
+    border-color: white;
     margin: 20px 0px 0px;
     padding: 0px 12px;
     border-radius: 4px;
@@ -82,8 +83,6 @@ img {
   }
   
   .main-button.active {
-    transform: translateY(6px);
-    box-shadow: none;
     outline: none;
   }
   
