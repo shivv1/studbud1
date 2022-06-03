@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="scss/main.scss">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
@@ -79,7 +79,25 @@
         </div>
         <!-- box for dictionary -->
         <div class="col col3">
-          <h3>Col 3</h3>
+          <div class="dictionary-container">
+            <div class="input">
+              <input onkeypress="handle(event)" type="text" class="search-field" placeholder="Dictionary Search"/>
+            </div>
+            <div class="result">
+              <h4 id="word" class="word">Hello</h4>
+              <p class="phonetics">/həˈləʊ/</p>
+              <p class="word-definition">A greeting</p>
+              <p class="synonymtitle">Synonyms</p>
+              <div class="synonyms">
+                <!-- <p class="synbox">hello</p>
+                <p class="synbox">hello</p>
+                <p class="synbox">hello</p>
+                <p class="synbox">hello</p>
+                <p class="synbox">hello</p>
+                <p class="synbox">hello</p> -->
+              </div>
+            </div>
+          </div>
         </div>
         <!-- box for kanban -->
         <div class="col col4">
@@ -93,6 +111,8 @@
         <script src="js/music.js"></script>
         <!-- Javascript for stopwatch -->
         <script src="js/stopwatch.js"></script>
+        <!-- Javascript for dictionary -->
+        <script src="js/dictionary.js"></script>
 
     </body>
 </html>
